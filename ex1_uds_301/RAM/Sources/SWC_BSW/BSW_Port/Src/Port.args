@@ -1,0 +1,138 @@
+-sym dwarf-2
+-sym full
+-msgstyle parseable
+-proc zen
+-big
+-fp soft
+-model absolute
+-abi eabi
+-sdata 8
+-sdata2 8
+-vle
+-enc ascii
+-prefix
+"$(MCUToolsBaseDirEnv)/PA_Support/ewl/EWL_C/include/lib_ewl.prefix"
+-prefix
+"$(ProjDirPath)/Prefix/MPC5602B_RAM_VLE.prefix"
+-c
+-nostdinc
+-nosyspath
+-i
+"$(ProjDirPath)/Project_Headers"
+-i
+"$(ProjDirPath)/Sources"
+-i
+"$(ProjDirPath)/Sources/SWC_BSW/BSW_Adc/Inc"
+-i
+"$(ProjDirPath)/Sources/SWC_BSW/BSW_BOF/Inc"
+-i
+"$(ProjDirPath)/Sources/SWC_BSW/BSW_Calibration/Inc"
+-i
+"$(ProjDirPath)/Sources/SWC_BSW/BSW_Can/Inc"
+-i
+"$(ProjDirPath)/Sources/SWC_BSW/BSW_Dio/Inc"
+-i
+"$(ProjDirPath)/Sources/SWC_BSW/BSW_E2PE/Inc"
+-i
+"$(ProjDirPath)/Sources/SWC_BSW/BSW_EcuM/Inc"
+-i
+"$(ProjDirPath)/Sources/SWC_BSW/BSW_EMIOS_PWM/Inc"
+-i
+"$(ProjDirPath)/Sources/SWC_BSW/BSW_Fls/Inc"
+-i
+"$(ProjDirPath)/Sources/SWC_BSW/BSW_IoHwAb/Inc"
+-i
+"$(ProjDirPath)/Sources/SWC_BSW/BSW_Mcu/Inc"
+-i
+"$(ProjDirPath)/Sources/SWC_BSW/BSW_PIT/Inc"
+-i
+"$(ProjDirPath)/Sources/SWC_BSW/BSW_Port/Inc"
+-i
+"$(ProjDirPath)/Sources/SWC_BSW/BSW_Rtc/Inc"
+-i
+"$(ProjDirPath)/Sources/SWC_BSW/BSW_ScM/Inc"
+-i
+"$(ProjDirPath)/Sources/SWC_BSW/BSW_STB/Inc"
+-i
+"$(ProjDirPath)/Sources/SWC_BSW/BSW_Uds/Inc"
+-i
+"$(ProjDirPath)/Sources/SWC_BSW/BSW_Wdg/Inc"
+-i
+"$(ProjDirPath)/Sources/SWC_RTE/Inc"
+-i
+"$(ProjDirPath)/Sources/SWC_SWA/SWA_BT/Inc"
+-i
+"$(ProjDirPath)/Sources/SWC_SWA/SWA_DSM/Inc"
+-i
+"$(ProjDirPath)/Sources/SWC_SWA/SWA_FSM/Inc"
+-i
+"$(ProjDirPath)/Sources/SWC_SWA/SWA_SAM/Inc"
+-i
+"$(ProjDirPath)/Sources/SWC_SWA/SWA_ST/Inc"
+-i
+"$(ProjDirPath)/Sources/SWC_SWA/SWA_TCM/Inc"
+-i
+"$(ProjDirPath)/Sources/SWC_SWA/SWA_TMR/Inc"
+-i
+"$(ProjDirPath)/Sources/SWC_SWA/SWA_UDS/Common"
+-i
+"$(ProjDirPath)/Sources/SWC_SWA/SWA_UDS/Can"
+-i
+"$(ProjDirPath)/Sources/SWC_SWA/SWA_UDS/CanIf"
+-i
+"$(ProjDirPath)/Sources/SWC_SWA/SWA_UDS/CanTp"
+-i
+"$(ProjDirPath)/Sources/SWC_SWA/SWA_UDS/Dcm"
+-i
+"$(ProjDirPath)/Sources/SWC_SWA/SWA_UDS/Debug/Inc"
+-i
+"$(ProjDirPath)/Sources/SWC_SWA/SWA_UDS/Dem"
+-i
+"$(ProjDirPath)/Sources/SWC_SWA/SWA_UDS/Det"
+-i
+"$(ProjDirPath)/Sources/SWC_SWA/SWA_UDS/Nvm"
+-i
+"$(ProjDirPath)/Sources/SWC_SWA/SWA_VER/Inc"
+-i
+"$(ProjDirPath)/Sources/SWC_BSW/BSW_UART/Inc"
+-i
+"$(ProjDirPath)/Sources/SWC_SWA/SWA_OSM/Inc"
+-i
+"$(ProjDirPath)/Sources/SWC_SWA/SWA_MSM/Inc"
+-I-
+-I"$(MCUToolsBaseDirEnv)/PA_Support/ewl/EWL_C/include"
+-I-
+-I"$(MCUToolsBaseDirEnv)/PA_Support/ewl/EWL_Runtime/Runtime_PA/Include"
+-I-
+-I"$(MCUToolsBaseDirEnv)/PA_Support/Initialization_Files"
+-disable_extensions off
+-warn illpragmas
+-warn unwanted
+-warn hidevirtual
+-warn implicitconv
+-warn unusedarg
+-warn unusedvar
+-warn unusedexpr
+-warn extracomma
+-warn structclass
+-opt level=0
+-opt speed
+-inline on
+-inline nobottomup
+-align powerpc
+-func_align 4
+-pooldata off
+-common off
+-use_lmw_stmw on
+-novolatileasm
+-schedule off
+-opt nopeephole
+-use_isel on
+-ppc_asm_to_vle
+-Cpp_Exceptions off
+-bool off
+-requireprotos
+-char unsigned
+-str nopool
+-str reuse
+-ipa off
